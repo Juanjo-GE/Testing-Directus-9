@@ -2,9 +2,27 @@
 
 Creación de una aplicación de pruebas para analizar el acoplamiento de **Directus 9**, que será nuestra API y CMS, con **Nextjs**, que será el framework frontend elegido para crear la interfaz de nuestra aplicación.
 
-## Instalación
+## Primeros pasos
 
-### Directus
+### Requisitos
+
+Directus solo requiere Node.js y es compatible con la mayoría de los sistemas operativos y proveedores de bases de datos SQL.
+
+- Node.js 12.20+
+- npm 6.x+
+
+**Bases de datos compatibles**
+
+- PostgreSQL 10+
+- MySQL 5.7.8+
+- MariaDB 10.2+
+- SQLite 3+
+- MS-SQL X.X+
+- OracleDB X.X+
+
+### Instalación
+
+#### Directus
 
 Instalar con npm:
 
@@ -29,7 +47,7 @@ npx directus start
 
 Servidor lanzado en: http://localhost:8055
 
-### Nextjs
+#### Nextjs
 
 Instalar con npm:
 
@@ -62,7 +80,7 @@ npm run dev
 
 Servidor lanzado en http://localhost:3000
 
-### React query
+#### React query
 
 Instalar react query como manejador de estados en el servidor y optimizador del rendimiento de las solicitudes a la API:
 
@@ -70,13 +88,13 @@ Instalar react query como manejador de estados en el servidor y optimizador del 
 cd <ruta del directorio de la aplicación>
 ```
 
-npm install react-query <span style="color:white; background-color:red;">DEPRECATED</span>
+npm install react-query ![maintenance-status](https://img.shields.io/badge/maintenance-deprecated-red.svg)
 
 ```console
 npm install @tanstack/react-query
 ```
 
-### SASS
+#### SASS
 
 Instalar SASS como preprocesador de hojas de estilos CSS para una mayor mantenibilidad y escalabilidad de proyectos complejos:
 
