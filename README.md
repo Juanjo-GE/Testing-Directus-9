@@ -63,14 +63,6 @@ npx create-next-app@latest <nombre de la aplicación>
 npx create-next-app@latest nextjs-con-typescript <nombre de la aplicación>
 ```
 
->[OPCIONAL]
->
->Agregar Tailwind a la instalación:
-
-```console
-npx create-next-app@latest -e with-tailwindcss <nombre de la aplicación>
-```
-
 Lanzar la aplicación:
 
 ```console
@@ -79,6 +71,8 @@ npm run dev
 ```
 
 Servidor lanzado en http://localhost:3000
+
+### Dependencias
 
 #### React query
 
@@ -94,12 +88,14 @@ npm install react-query ![maintenance-status](https://img.shields.io/badge/maint
 npm install @tanstack/react-query
 ```
 
-#### SASS
+#### Tailwind
 
-Instalar SASS como preprocesador de hojas de estilos CSS para una mayor mantenibilidad y escalabilidad de proyectos complejos:
+Instalar Tailwind como framework CSS para estilizar prototipos y casos de testing al permitir un desarrollo ágil y optimizado:
 
 ```console
-npm install sass
+cd <ruta del directorio de la aplicación>
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
 
 
