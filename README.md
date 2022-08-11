@@ -98,6 +98,21 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+### Variables de entorno local
 
+Variables del entorno de *Desarrollo* usadas al compilar/ejecutar la aplicación:
+
+```console
+GRAPHQL=http://localhost:8055/graphql
+NEXT_PUBLIC_GRAPHQL=http://localhost:8055/graphql
+```
+```console
+ASSETS_URL=http://localhost:8055/assets
+NEXT_PUBLIC_ASSETS_URL=http://localhost:8055/assets
+```
+```console
+COLLECTION_URL=http://localhost:8055/ítems
+NEXT_PUBLIC_COLLECTION_URL=http://localhost:8055/items
+```
 
 
