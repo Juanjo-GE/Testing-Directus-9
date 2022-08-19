@@ -88,6 +88,15 @@ npm install react-query ![maintenance-status](https://img.shields.io/badge/maint
 npm install @tanstack/react-query
 ```
 
+#### Zustand
+
+Instalar Zustand como solución ligera, rápida y escalable que utiliza principios de flujo simplificados para manejar estados globales en el cliente:
+
+```console
+cd <ruta del directorio de la aplicación>
+npm install zustand
+```
+
 #### Tailwind
 
 Instalar Tailwind como framework CSS para estilizar prototipos y casos de testing al permitir un desarrollo ágil y optimizado:
@@ -105,6 +114,10 @@ Variables del entorno de *Desarrollo* usadas al compilar/ejecutar la aplicación
 ```console
 GRAPHQL=http://localhost:8055/graphql
 NEXT_PUBLIC_GRAPHQL=http://localhost:8055/graphql
+```
+```console
+GRAPHQL_FILES_URL=http://localhost:8055/graphql/system
+NEXT_PUBLIC_FILES_URL=http://localhost:8055/graphql/system
 ```
 ```console
 ASSETS_URL=http://localhost:8055/assets
