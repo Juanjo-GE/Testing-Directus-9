@@ -1,6 +1,8 @@
 # Directus & Nextjs ![Directus](https://img.shields.io/badge/directus-%2364f.svg?style=for-the-badge&logo=directus&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
-Creación de una aplicación de pruebas para analizar el acoplamiento de **Directus 9**, que será nuestra API y CMS, con **Nextjs**, que será el framework frontend elegido para crear la interfaz de nuestra aplicación.
+**Directus** es un CMS que nos permite crear contenidos y una estructura y base de datos para luego exponer toda esa arquitectura mediante su API y así poder conectarlo con otras tecnologías y aplicaciones. Al ser un Headless CMS implica que el front es independiente a las bases de datos y al back. 
+
+El objetivo de este estudio es analizar la viabilidad de usar Directus como CMS para futuros proyectos. Para realizar un testeo exhaustivo, se desarrollarán varias aplicaciones sencillas con **Nextjs** (framework frontend elegido para crear las interfaces) y se analizará el acoplamiento de ambas partes.
 
 ## Primeros pasos
 
@@ -107,6 +109,15 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+#### Next Auth
+
+Instalar Next Auth para ejecutar las pruebas de autentificación en la aplicación de una manera sencilla y rápida:
+
+```console
+cd <ruta del directorio de la aplicación>
+npx install next-auth
+```
+
 ### Variables de entorno local
 
 Variables del entorno de *Desarrollo* usadas al compilar/ejecutar la aplicación:
@@ -128,4 +139,33 @@ COLLECTION_URL=http://localhost:8055/ítems
 NEXT_PUBLIC_COLLECTION_URL=http://localhost:8055/items
 ```
 
+### Actualización
+
+#### Directus
+
+Introducir la versión actual en el archivo `package.json` para actualizar el proyecto a la última versión de Directus:
+
+```console
+{
+  "dependencies": {
+    "directus": "x.x.x"
+  }
+}
+```
+
+Ejecutar:
+
+```console
+cd <ruta del directorio de la aplicación>
+npx install
+```
+
+#### Base de datos
+
+Actualizar la base de datos si la hemos manipulado manualmente, para que Directus integre los cambios:
+
+```console
+cd <ruta del directorio de la aplicación>
+npx directus database migrate:latest
+```
 
